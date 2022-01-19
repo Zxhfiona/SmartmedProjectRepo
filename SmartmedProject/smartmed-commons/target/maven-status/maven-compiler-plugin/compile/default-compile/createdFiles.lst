@@ -5,9 +5,14 @@ com\zxhfiona\smartmed\system\admin\transport\AdminTransport.class
 com\zxhfiona\smartmed\base\controller\BaseController.class
 com\zxhfiona\smartmed\base\pojo\vo\ResponseVO.class
 com\zxhfiona\smartmed\base\pojo\vo\PageVO.class
+com\zxhfiona\smartmed\system\admin\pojo\vo\RouterVO$Meta.class
 com\zxhfiona\smartmed\base\pojo\enums\ResponseCodeEnum.class
 com\zxhfiona\smartmed\system\admin\pojo\vo\AdminVO.class
 com\zxhfiona\smartmed\base\util\RedisUtil.class
+com\zxhfiona\smartmed\system\admin\pojo\vo\RouterVO.class
 com\zxhfiona\smartmed\base\pojo\vo\BaseVO.class
 com\zxhfiona\smartmed\system\admin\pojo\vo\AdminLoginVO.class
 com\zxhfiona\smartmed\base\util\TokenUtil.class
+com\zxhfiona\smartmed\system\admin\pojo\vo\AdminInfo.class
+com\zxhfiona\smartmed\system\admin\pojo\vo\RoleVO.class
+com\zxhfiona\smartmed\system\admin\transport\MenuTransport.class

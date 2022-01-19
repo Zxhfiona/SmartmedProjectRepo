@@ -12,7 +12,7 @@ import com.zxhfiona.smartmed.system.admin.pojo.vo.AdminVO;
  */
 public interface AdminService {
 	/**
-	 * <b>根据手机号码查询对象信息</b>
+	 * <b>根据手机号码查询系统用户视图信息</b>
 	 * @param cellphone
 	 * @return
 	 * @throws Exception

@@ -9,6 +9,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
+import javax.annotation.Resource;
+
 /**
  * <b>系统功能 - 系统用户传输层接口实现类</b>
  *
@@ -20,16 +22,16 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController("adminTransport")
 @RequestMapping("/system/admin/admin/trans")
 public class AdminTransportImpl implements AdminTransport {
-	@Autowired
+	@Resource(name = "adminService")
 	private AdminService adminService;
 
 	/**
-	 * <b>根据手机号码查询用户信息</b>
+	 * <b>根据手机号码查询系统用户视图信息</b>
 	 * @param cellphone
 	 * @return
 	 * @throws Exception
 	 */
-	@PostMapping("/cellphone")
+	@PostMapping("/login")
 	@Override
 	public AdminVO getAdminVOByCellphone(@RequestParam String cellphone) throws Exception {
 		return adminService.getAdminVOByCellphone(cellphone);

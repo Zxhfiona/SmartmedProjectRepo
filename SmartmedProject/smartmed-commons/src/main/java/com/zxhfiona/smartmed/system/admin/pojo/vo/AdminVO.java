@@ -3,6 +3,8 @@ package com.zxhfiona.smartmed.system.admin.pojo.vo;
 import com.zxhfiona.smartmed.base.pojo.vo.BaseVO;
 import lombok.Data;
 
+import java.util.List;
+
 /**
  * <b>系统功能 - 系统用户视图信息</b>
  *
@@ -19,10 +21,10 @@ public class AdminVO extends BaseVO {
 	private String name;                    // 姓名
 	private String cellphone;               // 手机号码
 	private String password;                // 登录密码
-	private String role;                    // 角色
+	private RoleVO roleVO;                  // 角色
 	private String identity;                // 身份
 	private String department;              // 所在部门
-	private String techPos;                 // 服务者专业技术职务
+	private String techPostTitle;           // 服务者专业技术职务
 	private String education;               // 学历
-	private String techPosRank;             // 服务者专业技术职务等级
+	private String techPostRank;            // 服务者专业技术职务等级
 }

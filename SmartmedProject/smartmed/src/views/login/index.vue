@@ -8,12 +8,12 @@
              label-position="left">
 
       <div class="title-container">
-        <h3 class="title">Smartmed 智慧医疗信息平台</h3>
+        <h3 class="title">Witmed 智慧医疗信息平台</h3>
       </div>
 
       <el-form-item prop="cellphone">
         <span class="svg-container">
-          <svg-icon icon-class="cellphone" />
+          <svg-icon icon-class="user" />
         </span>
         <el-input
           ref="cellphone"
@@ -46,20 +46,13 @@
         </span>
       </el-form-item>
 
-      <el-button
-        :loading="loading"
-        type="primary"
-        style="width:100%;margin-bottom:30px;"
-        @click.native.prevent="handleLogin">
-        登录
-      </el-button>
+      <el-button :loading="loading" type="primary" style="width:100%;margin-bottom:30px;" @click.native.prevent="handleLogin">登录</el-button>
+
     </el-form>
   </div>
 </template>
 
 <script>
-import { validUsername } from '@/utils/validate'
-
 export default {
   name: 'Login',
   data() {
@@ -73,7 +66,7 @@ export default {
     const validateCellphone = (rule, value, callback) => {
       // value 就是表单中输入的值
       // 自己设定校验规则，设置手机号码的正则表达式
-      let cellphoneRegex = new RegExp("1[0-9]{10}$");
+      var cellphoneRegex = new RegExp('1[0-9]{10}$')
       if (cellphoneRegex.test(value)) {
         // 校验通过，用户所填写的手机号码正确
         callback()
@@ -84,7 +77,7 @@ export default {
     }
     const validatePassword = (rule, value, callback) => {
       // 设置密码校验正则表达式
-      let passwordRegex = new RegExp("[A-Za-z0-9]{6,}");
+      var passwordRegex = new RegExp('[A-Za-z0-9]{6,}')
       if (passwordRegex.test(value)) {
         callback()
       } else {

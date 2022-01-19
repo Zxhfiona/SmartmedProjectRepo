@@ -1,5 +1,9 @@
+com\zxhfiona\smartmed\system\admin\dao\MenuDao.class
+com\zxhfiona\smartmed\system\admin\transport\impl\MenuTransportImpl.class
+com\zxhfiona\smartmed\system\admin\service\impl\AdminServiceImpl.class
+com\zxhfiona\smartmed\system\admin\service\impl\MenuServiceImpl.class
+com\zxhfiona\smartmed\system\admin\service\MenuService.class
+com\zxhfiona\smartmed\SystemProviderStarter.class
 com\zxhfiona\smartmed\system\admin\service\AdminService.class
 com\zxhfiona\smartmed\system\admin\transport\impl\AdminTransportImpl.class
 com\zxhfiona\smartmed\system\admin\dao\AdminDao.class
-com\zxhfiona\smartmed\system\admin\service\impl\AdminServiceImpl.class
-com\zxhfiona\smartmed\SystemProviderStarter.class
